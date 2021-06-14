@@ -1,4 +1,13 @@
-<h1>Static Home Page</h1>
-<p>Home page for a sample application in: 
-  <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>.
-</p>
+<% provide(:title, "Home") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+  </head>
+  <body>
+    <h1>Static Home Page</h1>
+    <p>Home page for a sample application in: 
+      <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>.
+    </p>
+  </body>
+</html>
